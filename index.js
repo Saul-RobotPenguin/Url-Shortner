@@ -54,7 +54,7 @@ app.post("/", async (req, res) => {
     });
     const result = await newURL.save();
     return res.send({
-      shorten_url: `http://localhost:3000/${result.shorten_id}`,
+      shorten_url: `https://shorten-my-url.netlify.app/${result.shorten_id}`,
     });
   }
 });
