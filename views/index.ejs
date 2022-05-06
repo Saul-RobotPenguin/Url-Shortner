@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <nav>
+      <div class="contaier__nav">
+        <div class="brand__name">
+          <strong>Saul's URL Shortener</strong>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="container__left">
+        <h1>Shorten Your URL</h1>
+        <p>A URL Shortener Built By Saul.C</p>
+        <div class="input__div">
+          <form>
+            <input
+              type="text"
+              name="url"
+              placeholder="Shorten Your URL"
+              autocomplete="off"
+            /><input type="submit" value="Shorten URL" />
+          </form>
+        </div>
+        <!-- <a href="#/" class="btn btn-primary">Explore</a> -->
+      </div>
+    </div>
+    <div class="output">
+      <a href="" class="shorten__url">Demo</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+    <script type="text/javascript" src="/script.js"></script>
+  </body>
+</html>
