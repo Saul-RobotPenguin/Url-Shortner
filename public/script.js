@@ -4,7 +4,10 @@ form.addEventListener("submit", async (e) => {
   const url = form.url.value;
   if (url) {
     try {
-      const r = await axios.post("http://localhost:3000/", { url: url });
+      const r = await axios.post(
+        "https://sauls-shorten-my-url.herokuapp.com/",
+        { url: url }
+      );
       if (r.status === 200) {
         document.querySelector(".output").style.display = "flex";
 
