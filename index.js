@@ -54,7 +54,7 @@ app.post("/", async (req, res) => {
     });
     const result = await newURL.save();
     return res.send({
-      shorten_url: `${process.env.HOST}${result.shorten_id}`,
+      shorten_url: `https://shortenmyurl.onrender.com/${result.shorten_id}`,
     });
   }
 });

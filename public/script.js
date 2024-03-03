@@ -5,7 +5,7 @@ form.addEventListener("submit", async (e) => {
   if (url) {
     try {
       const r = await axios.post(
-        `${process.env.HOST}`,
+        `https://shortenmyurl.onrender.com/`,
         { url: url }
       );
       if (r.status === 200) {
