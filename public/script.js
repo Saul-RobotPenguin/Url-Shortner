@@ -5,7 +5,7 @@ form.addEventListener("submit", async (e) => {
   if (url) {
     try {
       const r = await axios.post(
-        "https://sauls-shorten-my-url.herokuapp.com/",
+        `${process.env.HOST}`,
         { url: url }
       );
       if (r.status === 200) {
